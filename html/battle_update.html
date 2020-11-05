@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/battle.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/animate.css">
+</head>
+
+<body>
+    <div id="winGameArea">
+        <img id="winGame" onclick="goodEndFunc()" style="animation-duration:2.0s" class="" src="">
+    </div>
+    <main id="mainArea">
+        <!-- 播放音樂 -->
+        <div id="topArea">
+            <div id="wordArea">
+                <img class="word00" id="word001" src="../image/word001V1.png" alt="">
+                <img class="word00" id="word002" src="../image/word002V1.png" alt="">
+                <img class="word00" id="word003" src="../image/word003V1.png" alt="">
+                <img class="word00" id="word004" src="../image/word004V1.png" alt="">
+            </div>
+            <div>
+                <p id="hpEffect" class="" style="animation-duration:2.0s"></p>
+            </div>
+            <div>
+                <audio src="../audio/battle.mp3" id="myMusic"></audio>
+                <audio src="../audio/button01a.mp3" id="mySound"></audio>
+            </div>
+            <!-- 主要顯示區 -->
+        </div>
+        <div id="midArea">
+            <div id="midAreaLeft">
+                <!-- <img id="leftImg" src="../image/monster01V1.png" alt=""> -->
+            </div>
+            <div id="midAreaMid">
+                <p id="topInfo">請選擇攻擊對象 : </p>
+                <img id="centerImg" class="" style="display:block ;animation-duration:2.2s" src="../image/BOSSV1.png"
+                    alt="">
+                <img id='hitEffect01' style="display:block" src="" alt="">
+            </div>
+
+            <div id="midAreaRight">
+                <!-- <img id="rightImg" src="../image/BOSS02V1.jpg.png" alt=""> -->
+            </div>
+        </div>
+        <div id="bottomArea">
+            <div id="battleInfo">
+                <p id="demo1">我方回合</p>
+                <p id="demo2"></p>
+                <p id="demo3"></p>
+                <p id="demo4"></p>
+            </div>
+
+            <div id="roleList">
+                <div id="anotherRoleplay01">
+                    <div><img class="myRole" src="../image/anotherrole01V2.png" alt=""></div>
+                    <div>
+                        <label for="">HP : </label>
+                        <p id="myHp">999</p>
+                        <label for=""> / 999</label>
+                    </div>
+                    <div id="hpArea">
+                        <div id="myHpArea"><span>-</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 女角，暫時隱藏 -->
+                <!-- <div id="anotherRoleplay02">
+                    <img class="myRole" src="../image/anotherrole02V1.png" alt="">
+                </div> -->
+                <img id="bossEffect" src="" alt="">
+            </div>
+            <div id="battleList">
+                <div><button id="normalFight" onclick="hitBtn()">攻擊</button></div>
+                <div>
+                    <button id="myObj" onclick="myObjBtn()">物品</button>
+                    <button id="yin_yang" onclick="showBtn()" style="cursor: pointer;"></button>
+                    <button id="specialFight" onclick="utlBtn()">絕學</button>
+                </div>
+                <div><button id="run" onclick="runBtn()">逃跑</button></div>
+
+            </div>
+        </div>
+
+    </main>
+
+     <script src="../js/battle.js"></script>
+     <script>
+         
+
+     </script>
+</body>
+
+</html>
